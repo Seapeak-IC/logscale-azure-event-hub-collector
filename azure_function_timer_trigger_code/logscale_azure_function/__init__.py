@@ -15,7 +15,7 @@ from azure.eventhub.aio import EventHubConsumerClient
 from azure.eventhub import EventHubConsumerClient as sync_client
 from azure.storage.blob import ContainerClient
 
-LOG_BATCHES = 5000
+LOG_BATCHES = 100
 CONTAINER_NAME = "logscale-checkpoint-store"
 BLOB_NAME = "logscale-checkpoint.json"
 warnings.filterwarnings("ignore", category=DeprecationWarning)
